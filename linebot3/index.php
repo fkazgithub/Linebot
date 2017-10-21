@@ -71,7 +71,7 @@ $message = "寺子屋ラボ連絡用LineBotです\n"."毎週日曜日の20時に
  $message2 ="アシスタント業務→";
  $message3 = "講師の方→";
 
-  $bot->pushmessage($event->getReplyToken(),
+  $bot->replymessage($event->getReplyToken(),
     (new \LINE\LINEBot\MessageBuilder\MultiMessageBuilder())
       ->add(new \LINE\LINEBot\MessageBuilder\TextMessageBuilder($message))
       ->add(new \LINE\LINEBot\MessageBuilder\TextMessageBuilder($message2))
